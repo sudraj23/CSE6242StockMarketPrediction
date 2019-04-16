@@ -1,3 +1,6 @@
+All the d3 files were developed upon some basic d3 templates found on the internet.
 My contributions:
-Script.js: Contains all the d3.js code which is used for visualization. Written mostly by me. 
+Script.js: Contains all the d3.js code which is used for visualization. Written entirely by me. 
+VirtualScroller.js: Contains all the d3 code used for creating dynamic scrolling functionality. Written entirely by me.
 finalizedmodel.sav: Written by me and Aditya. This python code is used to make model prediction which is used by the web application during visualization.
+Style.css, Web_Style.css: CSS files written by me.

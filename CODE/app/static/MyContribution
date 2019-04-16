@@ -1,1 +1,3 @@
-All the code files in this folder have been developed by me.
+My contributions:
+Script.js: Contains all the d3.js code which is used for visualization. Written mostly by me. 
+finalizedmodel.sav: Written by me and Aditya. This python code is used to make model prediction which is used by the web application during visualization.

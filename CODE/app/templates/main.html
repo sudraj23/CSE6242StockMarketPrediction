@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Stock Price Movement Using News Analytics</title>
+    </head>
+    <style>
+        body {
+            text-align: center;
+            font-family: sans-serif;
+            font-size: 10;
+
+        }
+        #body_clip {
+            margin-left: 15%;
+            margin-right: 15%;
+            margin-bottom: 4%;
+        }
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        li {
+            text-align: left;
+        }
+        #header {
+            background: #000000;
+            /*background-image:url("../static/head_bg.svg");*/
+            width: 100%;
+        }
+        #headersub {
+            color: #ccc;
+            width: 960px;
+            margin: 0px auto 0px auto;
+            padding: 1px 0px 1px 0px;
+            font: 18px
+        }
+
+/*        h1 {
+            background-color: black;
+            color: white;
+            margin-top: 0;
+        }*/
+        .members {
+            display: flex;
+            justify-content: center;
+        }
+        .team {
+            height: 175px;
+            width: 350px;
+            display: inline-block;
+        }
+        .team img {
+            height: 80%;
+        }
+        .notright {
+            margin-right: 5%;
+        }
+    </style>
+    <body>
+        <div id="header"  >
+            
+            <div id="headersub">
+                <h1>
+<!--                    <div style="float: left; padding: 0px">
+                        <img src="../static/bearbull.jpg" style ="position:absolute; top:10px; left:170px; width:6%;" />
+
+                    </div> -->
+                    <p style="color: #FFFFFF; text-align: center">Stock Price Movement Using News Analytics</p>
+                </h1>
+            </div>
+        </div>
+        <div id="body_clip"> 
+<!--         <h1>Stock Price Movement Using News Analytics</h1> -->
+        <p>Would you like to make more money? Who wouldn't? Investing in the stock market is a great way to do just that! But beware: To be successful, you'll need to invest in the right stock at the right time. Our interactive application will help you maximize your profit by showing you how to get the most out of the news you read every day.</p>
+        <p>To dive right in and start using the app, click the image below. To learn more about how to use the app or the features that we looked at, keep reading.</p>
+        <!-- <img src="../static/images/user_guide.png" width="70%"> -->
+        <a href="index"><img src="/static/images/user_guide.png" width="70%"></a> 
+        <br>
+        <h3>How to Use Our App</h3>
+        <ol>
+            <li><b>Pick a Stock:</b> Is there a stock you're particularly interested in? Great! Click on it in the list on the right side of the application to learn more about how it's fared over time.</li>
+            <li><b>Explore the Stock:</b> Our app lets you easily see stock price movement trend and the tooltip tells the  Expected and Predicted stock price movement. The Predicted arrow shows the direction our model expected the stock to move. The Expected arrow shows what actually occurred.
+            </li>
+            <li>
+                <b>Track the Stock:</b> The ticker on the left lets the user to track the actual price and the volume of the selected stock on a particular date. The date changes as the user moves the cursor over the line plot.
+            </li>
+            <li>
+                <b>Select Time Range:</b> The legend at the top provides the user to choose the time interval for which he is interested to see the stock price pattern.
+            </li>
+            <li>
+                <b>Easy Time Window:</b> The blue box allows the user to select the custom time window and also to scroll over it.
+            </li>
+            <li>
+                <b>Explore the News:</b> Click on a date of interest in the top graph to see a list of news items from that day related to your chosen stock.
+                The app shows the sentiment value with 1 being positive, -1 being negative, and 0 being neutral, urgency of the news item whether it is an article (3) or an alert (1) and the color of the news shows the positive (Green) and negative (Red) impact on stock price movement.
+            </li>
+        </ol>
+        <br>
+        <h2>Analysis in a Nutshell</h2>
+
+        <p style="text-align: justify;">
+            We observed that the number of words directly depicting the sentiment of the news towards the stock is the most relevant feature towards the stock movements. We also observed that people respond more to articles than to headlines. The earlier or later mention of stocks  in an article/headline  also impact their movement. The relevance of the news towards the stock asset also provides an idea of the direction of the stock movement.
+            <br>
+            What may be more surprising are that people tend to respond to negative sentiments more than to positive sentiments.
+            <!--         We found that the number of words or sentences discussing a stock in a news article, where in the article the stock first appeared, how relevant the article was the stock, and whether the article discussed the stock in a positive or negative light had an important impact on that stock's movement. We also found that people respond more to articles than to headlines alone. Makes sense, right? What may be more surprising are that people tend to respond to negative sentiments more than to positive sentiments and that the direct impact of the news on stock price movement is very short-lived. -->
+
+
+        </p>
+                    <table>
+                <tbody>
+                    <tr>
+                        <td valign="center" align="center">
+                            <img src="../static/images/triangle.png" width=80%>
+                        </td>
+                        <td valign="center" align="center">
+                            <img src="../static/images/train_test_accuracy.png" >
+                        </td>
+                    </tr>
+                </tbody>    
+            </table>
+        <p>
+            Since news has a longer term impact on stock price movements, we focused on predicting the same from day 1 through day 10 from the day of observation and measure the accuracy. As depicted, using news sentiments to predict the movements for immediately next day give us an accuracy of 75%, comparable to historical research accuracy of 78% obtained using market data. As expected, the prediction accuracy decreased from day 1 through day 10 as shown in the plot above. Thus, news sentiments provide an extra leg in the predicability of stock price movements, if combined with market data.    
+        </p>
+        <br>
+        <h2>Our Team</h2>
+        <h3 style="margin-top: 32px;">Modeling</h3>
+        <div class = "members">
+            <div class = "team team1 notright">
+                <img src="../static/images/team_images/ravi.jpeg">
+                <b>Ravi Prakash Singh</b></br>
+                <i>Georgia Tech, MS in Analytics, 2019</i>
+            </div>
+            <div class = "team team1 notright">
+                <img src="../static/images/team_images/aditya.jpeg">
+                <b>Aditya Aggarwal</b></br>
+                <i>Georgia Tech, MS in Computer Science, 2020</i>
+            </div>
+            <div class = "team team1">
+                <img src="../static/images/team_images/manish.jpeg">
+                <b>Manish Mehta</b></br>
+                <i>Georgia Tech, MS in Analytics, 2019</i>
+            </div>
+        </div>
+        <h3 style="margin-top: 32px">Visualization</h3>
+        <div style="display: flex; justify-content: center;">
+            <div class = "team notright">
+                <img src="../static/images/team_images/sudhanshu.jpeg">
+                <b>Sudhanshu Raj Singh</b></br>
+                <i>Georgia Tech, MS in Analytics, 2019</i>
+            </div>
+            <div class = "team notright">
+                <img src="../static/images/team_images/anna.jpeg">
+                <b>Anna Riehle</b></br>
+                <i>Georgia Tech, MS in Analytics/MBA, 2020</i>
+            </div>
+            <div class = "team notright">
+                <img src="../static/images/team_images/emily.jpeg">
+                <b>Emily Huskins</b></br>
+                <i>Georgia Tech, MS in Analytics, 2019</i>
+            </div>
+        </div>
+        </div>
+    </body>
+</html>

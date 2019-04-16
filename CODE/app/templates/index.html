@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+		<meta charset="utf-8">
+		<title>6242 Project</title>
+    <link rel=stylesheet href="{{ url_for('static', filename='style.css') }}" type="text/css" media=screen>
+    <!-- <script src='https://d3js.org/d3.v3.min.js' charset="utf-8"></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.7.0/underscore-min.js' charset="utf-8"></script> -->
+    <script src="{{ url_for('static', filename='lib/d3.v3.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='lib/underscore-min.js') }}"></script>
+
+	</head>
+
+	<body>
+		<div id="header"  >
+			
+			<div id="headersub">
+				<h1>
+<!-- 					<div style="float: left; padding: 0px">
+						<img src="../static/bearbull.jpg" style ="position:absolute; top:10px; left:170px; width:6%;" />
+
+					</div> -->
+					<p style="color: #FFFFFF; text-align: center">Stock Price Movement Using News Analytics</p>
+				</h1>
+			</div>
+		</div>
+		<div class="viewport"></div>
+		<div class="information"></div>
+		<div class="viewport1"></div>
+		<div class="information1"></div>
+		<div class="information3"></div>
+		<script src="{{ url_for('static', filename='script.js') }}"></script>
+		<script src="{{ url_for('static', filename='virtualscroller.js') }}"></script>
+	</body>
+</html>

@@ -1,0 +1,231 @@
+html, body {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            font-family: sans-serif;
+            font-size: 12px;
+        }
+
+#header {
+    background: #000000;
+    /*background-image:url("../static/head_bg.svg");*/
+    width: 100%;
+  }
+  #headersub {
+    color: #ccc;
+    width: 960px;
+    margin: 0px auto 0px auto;
+    padding: 1px 0px 1px 0px;
+    font: 18px
+  }
+
+.chart__grid {
+  stroke: #212F3D;
+  opacity: 0.3;
+}
+.chart__legend {
+  font: 15px Arial;
+  fill: red;
+}
+svg {
+  font: 10px sans-serif;
+}
+.area {
+  fill: rgba(255,100,100,0.5);
+  clip-path: url("#clip");
+}
+.bar {
+       fill: #E7E7E7;
+        }
+.bar1 {
+       fill: #ff8c1a;
+        }
+
+.label {
+          font-size: 15px;
+        }        
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #e7eef4;
+  shape-rendering: crispEdges;
+}
+.brush .extent {
+  stroke: #2549DA;
+  fill-opacity: 0.125;
+  shape-rendering: crispEdges;
+}
+/*New*/
+.chart text {
+  /*fill: #7f8faf;*/
+  fill: #313b4e;
+}
+.chart__line {
+  fill: none;
+  stroke-width: 1.2px;
+  clip-path: url("#clip");
+}
+.chart__price--focus {
+  stroke-width: 1px;
+  /*stroke: #2142c4;*/
+  stroke: #000000;
+}
+.chart__average--focus {
+  stroke-width: 2px;
+  stroke: #f00;
+  opacity: 0.3;
+}
+.chart__overlay {
+  opacity: 0;
+  pointer-events: all;
+}
+.chart__tooltip--price {
+  fill: none;
+  stroke: #f00;
+
+}
+.chart__tooltip--average {
+  fill: none;
+  stroke: #f00;
+}
+.chart__bars {
+  /*fill: #a8b6f0;*/
+  fill: #f0df9d;
+  opacity: 1;
+}
+.chart__range-selection text {
+  cursor: pointer;
+  text-decoration: underline;
+  /*fill: #2980b9;*/
+  fill: #313b4e;
+}
+.chart__axis--context text {
+  /*fill: #7f8faf;*/
+}
+.chart__axis--context .tick:nth-child(odd) {
+  display: none;
+}
+.chart__axis--context path,
+.chart__axis--context line {
+  display: none;
+}
+.chart__area {
+  fill: #a8b6f0;
+  stroke: #2549da;
+}
+.extent {
+  fill: #e2f0ff;
+  fill: #3587bc;
+  fill-opacity: 0.3;
+}
+.y.axis .tick text {
+  text-anchor: start !important;
+  #fill: #7f8faf;
+  fill: #313b4e;
+}
+.y.axis .tick line {
+  display: none;
+}
+.y.axis path {
+  display: none;
+}
+.viewport {
+    position: absolute;
+    top: 120px;
+    left: 1100px;
+    overflow-y: auto;
+    width: 300px;
+    height: 400px;
+    background-color: #FFFFFF;
+    border: 0px solid #AAAAAA;
+    border-radius: 4px;
+    box-shadow: inset 0px 0px 0px 0px rgba(0,0,0, .25);
+}
+.scroll-svg {
+ width:280px;
+}
+.scroll-svg1 {
+ width:1030px;
+}
+.longscroll .row {
+    font-family: sans-serif;
+    font-size: 11px;
+    height: 19px;
+    padding: 0 8px;
+    border-bottom: solid #eee 1px;
+}
+
+.information {
+    position: absolute;
+    top: 120px;
+    left: 1405px;
+    width: 350px;
+    height: 400px;
+}
+.information3 {
+    position: absolute;
+    top: 80px;
+    left: 1100px;
+    width: 280px;
+    height: 50px;
+}
+
+
+.info-svg {
+    fill: #2968AA;
+    overflow: visible;
+}
+
+.brace {
+    stroke: #2968AA;
+    stroke-width: 2px;
+    fill: none;
+}
+
+.infotext {
+    font-size: 20px;
+}
+
+.viewport1 {
+    position: absolute;
+    top: 540px;
+    left: 150px;
+    overflow-y: auto;
+    width: 1050px;
+    height: 150px;
+    background-color: white;
+     /*#e8e8e8;*/
+    border: 1px solid #AAAAAA;
+    border-radius: 1px;
+    /*box-shadow: inset 1px 1px 6px 2px rgba(0,0,0, .25);*/
+}
+
+.information1 {
+    position: absolute;
+    top: 540px;
+    left: 1205px;
+    width: 350px;
+    height: 400px;
+}
+.bar-chart {
+    background-color:green;
+    overflow:visible;
+}
+.bar-chart1 {
+    fill: green;
+}
+.bar-chart2 {
+    fill: red;
+}
+div.tooltip { 
+    position: absolute;     
+    text-align: center;     
+    width: 100px;          
+    height: 100px;         
+    padding: 2px;       
+    font: 12px sans-serif;    
+    /*background: lightsteelblue; */
+    border: 0px;    
+    border-radius: 8px;     
+    pointer-events: none;     
+}

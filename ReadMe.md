@@ -3,6 +3,6 @@ There are some data files you need to download and keep in the specified folders
 
 Please download the SQL databse 'MarketData.db' and 'NewsData.db' from my OneDrive folder and keep both of them in this folder:"CODE/app/data/SQLdatabase" so that the visualization app works properly. 
 
-[MarketData.db](https://gtvault-my.sharepoint.com/:u:/g/personal/ssingh478_gatech_edu/EbUylQugeGVMrIwULCvxLDsBbAciDlX6OCH6gCkVwstNmw?e=jPzefl)
+[MarketData.db](https://gtvault-my.sharepoint.com/:u:/g/personal/ssingh478_gatech_edu/EcoyJvEfuUxLiu33xabLSqoBI7qS7SanVx6MlQ5BXcugfQ?e=zJYNrF)
 [NewsData.db](https://gtvault-my.sharepoint.com/:u:/g/personal/ssingh478_gatech_edu/EfZF4H0DgJpOiKphSIcOKOUB4Sr4obPzTG9XmhwcoKuYCA?e=tfO7u2)
 
